@@ -2,13 +2,13 @@
 
 import Link from "next/link";
 
-type Data = {
+type IData = {
   title: string;
   description: string;
   image: string;
 };
 
-const data: Data[] = [
+const data: IData[] = [
   {
     title: "The Rise of Artificial Intelligence",
     description:
@@ -52,17 +52,17 @@ export default function Blogs() {
     <>
       <h1 className="blogHeading">My Blogs</h1>
       <div className="cardsContainer">
-        {data.map((blog, index) => (
-          <div className="childContainer" key={index}>
+        {data.map((IData,index) => (
+          <div className="childContainer" >
             <div className="imageContainer">
               <img
-                src={blog.image}
-                alt={blog.title}
+                src={IData.image}
+                alt={IData.title}
                 className="imageContainer"
               />
             </div>
-            <h1 className="title">{blog.title}</h1>
-            <p className="description">{blog.description}</p>
+            <h1 className="title">{IData.title}</h1>
+            <p className="description">{IData.description}</p>
             <Link href={`/blogs/blog${index + 1}`}>
               <button className="btn" >
                 <i>R</i>
