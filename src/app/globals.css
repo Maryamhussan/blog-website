@@ -15,10 +15,10 @@
 display: flex;
  color: #f4f5f7;
   justify-content: flex-end;
-  padding-bottom: 5px;
+  padding-bottom: 15px;
   padding-top: 15px;
   padding-right: 10%;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 500;
   align-items: center;
   gap: 50px;
@@ -32,6 +32,7 @@ display: flex;
   justify-content: flex-start;
   padding: 5px;
   padding-top: 5px;
+  padding-bottom: 15px;
   padding-left: 20%;
   font-size: 30px;
   font-weight: 700;
@@ -260,7 +261,7 @@ overflow: auto;
   text-align: center;
   font-weight: 500;
   font-size: 30px;
-  color: #D68FD6; 
+  color: #fdfcfd; 
   margin-bottom: 35px;
  -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
@@ -365,7 +366,7 @@ button {
   border-radius: 1.625rem;
   vertical-align: middle;
   text-decoration: none;
-  background-color: #D68FD6;
+  background-color: #fdfcfd;
   padding: 0;
   margin-bottom: 10px;
   font-size: inherit;
@@ -383,7 +384,7 @@ button.learn-more .circle {
   margin: 0;
   width: 3rem;
   height: 3rem;
-  background: #0FF4C6;
+  background: #050505;
   border-radius: 1.625rem;
 }
 button.learn-more .circle .icon {
@@ -577,7 +578,7 @@ button:hover .button-text {
   text-align: left;
   font-weight: 500;
   font-size: 35px;
-  color: #D68FD6; 
+  color: #f7f5f7; 
   margin-bottom: 40px;
   -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
@@ -923,7 +924,7 @@ box-shadow: #DEFFF2 0px 20px 30px -10px;
   font-weight: 700;
   text-align: left;
   max-width: 100%;
-  color: #DEFFF2; 
+  color: #f8f8f8; 
   padding-top: 50px;
   -webkit-animation: wobble-hor-bottom 0.8s both;
 	        animation: wobble-hor-bottom 0.8s both;
@@ -1005,7 +1006,7 @@ box-shadow: #DEFFF2 0px 20px 30px -10px;
  
   max-width: 100%;
   
-  color: #DEFFF2; 
+  color: #fafafa; 
   padding-top: 50px;
   margin-bottom: 0;
   -webkit-animation: wobble-hor-bottom 0.8s both;
@@ -1087,7 +1088,7 @@ box-shadow: #DEFFF2 0px 20px 30px -10px;
   font-weight: 300;
   text-align: left;
   max-width: 80%;
-  color: #D68FD6; 
+  color: #faf7fa; 
   padding-top: 5px;
   line-height: 1.6;
   margin-bottom: 0px;
@@ -1169,7 +1170,7 @@ box-shadow: #DEFFF2 0px 20px 30px -10px;
   font-size: 20px;
   font-weight: 300;
   padding-left: 5%;
-  color: #D68FD6; 
+  color: #faf8fa; 
   padding-top: 15px;
   line-height: 1.6;
   -webkit-animation: wobble-hor-bottom 0.8s both;
@@ -1388,7 +1389,7 @@ box-shadow: #DEFFF2 0px 20px 30px -10px;
   text-align: center;
   margin-bottom: 20px;
   font-size: 2rem;
-  color: #0FF4C6; 
+  color: #ffffff; 
 }
 
 .contact-form {
@@ -1440,7 +1441,7 @@ textarea {
 }
 
 .submit-btn:hover {
-  background-color: #D68FD6;
+  background-color: #f8f6f8;
 }
 
 @media (max-width: 968px) {
@@ -1511,8 +1512,8 @@ textarea {
 }
 
 .social-icon {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   transition: transform 0.3s ease;
 }
 
