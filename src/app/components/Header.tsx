@@ -3,26 +3,20 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
-import { motion, AnimatePresence } from 'framer-motion'; // For smooth animations, especially for the mobile menu
-import { createClient } from '@/lib/supabase-client'; // Supabase client for auth operations
+import { motion, AnimatePresence } from 'framer-motion';
+import { createClient } from '@/lib/supabase-client';
+import { User } from '@supabase/supabase-js';
 
-// Define navigation items for the header
 const navItems = [
-  { name: 'Home', path: '/' },
-  { name: 'Blogs', path: '/blogs' },
-  { name: 'About', path: '/about' },
-  { name: 'Contact', path: '/contact' },
-];
-
+...
 // Header component: displays navigation and branding
 export default function Header() {
-  const pathname = usePathname(); // Get the current path to highlight active nav item
-  const router = useRouter(); // Router hook for client-side navigation
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // State to manage mobile menu visibility
-import { User } from '@supabase/supabase-js';
+  const pathname = usePathname();
+  const router = useRouter();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [user, setUser] = useState<User | null>(null);
+  const supabase = createClient();
 ...
-  const [user, setUser] = useState<User | null>(null); // State to hold user authentication status
-  const supabase = createClient(); // Initialize Supabase client
 
   // Effect hook to fetch user session on mount and listen for auth state changes
   useEffect(() => {
