@@ -19,7 +19,9 @@ export default function Header() {
   const pathname = usePathname(); // Get the current path to highlight active nav item
   const router = useRouter(); // Router hook for client-side navigation
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // State to manage mobile menu visibility
-  const [user, setUser] = useState<any>(null); // State to hold user authentication status
+import { User } from '@supabase/supabase-js';
+...
+  const [user, setUser] = useState<User | null>(null); // State to hold user authentication status
   const supabase = createClient(); // Initialize Supabase client
 
   // Effect hook to fetch user session on mount and listen for auth state changes
