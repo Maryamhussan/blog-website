@@ -47,8 +47,8 @@ export default function AuthForm() {
         if (signUpError) throw signUpError; // Throw error if signup fails
         setMessage('Check your email for the confirmation link!'); // Display success message
       }
-    } catch (err: Error) {
-      setError(err.message || 'An error occurred during authentication.'); // Set error message
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'An error occurred during authentication.'); // Set error message
     } finally {
       setLoading(false); // Reset loading state
     }
